@@ -1,0 +1,173 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;/*needed to keep divs same side*/
+}
+ body{
+    background-color: #081b29;
+    color: #ededed;
+   
+ }
+.header{
+    position: fixed; /*Makes it so it wont move if you scroll*/
+    top: 0;
+    left: 0;
+    width: 100%;/*Makes the background nav take up the whole width of the page*/
+    height: 8%;/*changes the hight up and down so it wont take up the page*/
+    padding: 20px 10%;/*20 takes care of up and down 10% takes care of left to right*/
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+.navbar a{
+    color: beige;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;/*space between tab*/
+    transition: 3s; /* anamtion that causes tabs to spread whn you load in*/
+}
+
+.navbar a:hover,
+.navbar a.active{ /*color when you hover over tabs, and active makes the home atuomatic blue*/
+    color: #00abf0;
+}
+
+.home{
+    display: flex;
+    align-items:center ;
+    height: 100vh;/*the text started at the top but the height changes the position and lowers it down*/
+    padding: 0 9%;/*brings it closer to the middle*/
+    padding-bottom: 14%;
+    
+}
+.home-content{  
+    max-width: 780px;/*changes width of box*/
+ 
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+.home-content .btn-box{
+
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box a{
+    display: inline-flex;/*split it into to diffrent boxes*/
+    width: 150px;
+    height: 100%;
+    border: 2px solid #00abf0;
+    background-color: #00abf0;
+    border-radius: 8px;/*changes shape of box to be more rounded*/
+    font-size: 19px;
+    color: black;
+    text-decoration: none;/*removes line under thata herf created*/
+    justify-content: center;/*aligns to the center top horizontal*/
+    align-items: center;/*aligns to the center top vertical*/
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+  
+}
+
+.home-sci a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.home img{
+    height: 500px;
+    width: 450px;
+    display: flex;
+    margin-left: 150px;
+    margin-top: 75px;
+    border: 8px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+
+.preview{
+    display: flex;
+     background-color: rebeccapurple;
+    /* border: 2px solid wheat; */
+    height: 500px;
+    margin-top: -120px;
+    margin-bottom: 100px;
+    width: 80%;
+    gap: 60px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.pre-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #225666;
+    border: 5px solid black;
+    padding: 10px;
+}
+.pre-content img{
+    height: auto;
+    width: 55vh;
+    object-fit: cover;
+    max-height: 30vh;
+} 
+
+.pre-text h1{
+    font-size: 25px;
+    color: black;
+    width: 150px;
+    height: 10%;
+    border: 2px solid #00abf0;
+    background-color: #00abf0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
